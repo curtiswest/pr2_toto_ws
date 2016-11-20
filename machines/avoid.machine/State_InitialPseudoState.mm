@@ -1,12 +1,12 @@
 //
-// State_InitialPseudoState.mm
+//State_InitialPseudoState.mm
 //
-// Automatically created through MiCASE -- do not change manually!
+//Automatically created through MiEditCLFSM -- do not change manually!
 //
 #include "avoid_Includes.h"
 #include "avoid.h"
-#include "State_InitialPseudoState.h"
 
+#include "State_InitialPseudoState.h"
 #include "State_InitialPseudoState_Includes.h"
 
 using namespace FSM;
@@ -14,7 +14,7 @@ using namespace CLM;
 using namespace FSMavoid;
 using namespace State;
 
-InitialPseudoState::InitialPseudoState(const char *name): CLState(name, *new InitialPseudoState::OnEntry, *new InitialPseudoState::OnExit, *new InitialPseudoState::Internal)
+InitialPseudoState::InitialPseudoState(const char *name):CLState(name, *new InitialPseudoState::OnEntry,*new InitialPseudoState::OnExit, *new InitialPseudoState::Internal)
 {
 	_transitions[0] = new Transition_0();
 }
@@ -25,7 +25,6 @@ InitialPseudoState::~InitialPseudoState()
 	delete &onExitAction();
 	delete &internalAction();
 
-	delete _transitions[0];
 }
 
 void InitialPseudoState::OnEntry::perform(CLMachine *_machine, CLState *_state) const
@@ -56,6 +55,8 @@ bool InitialPseudoState::Transition_0::check(CLMachine *_machine, CLState *_stat
 
 	return
 	(
-#		include "State_InitialPseudoState_Transition_0.expr"
+#			include "State_InitialPseudoState_Transition_0.expr"
 	);
 }
+
+

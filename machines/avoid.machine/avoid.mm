@@ -1,7 +1,7 @@
 //
-// avoid.mm
+//avoid.mm
 //
-// Automatically created through MiCASE -- do not change manually!
+//Automatically created through MiEditCLFSM -- do not change manually!
 //
 #include "avoid_Includes.h"
 #include "avoid.h"
@@ -15,7 +15,6 @@
 
 using namespace FSM;
 using namespace CLM;
-
 extern "C"
 {
 	avoid *CLM_Create_avoid(int mid, const char *name)
@@ -26,12 +25,12 @@ extern "C"
 
 avoid::avoid(int mid, const char *name): CLMachine(mid, name)
 {
-	_states[0] = new FSMavoid::State::InitialPseudoState;
-	_states[1] = new FSMavoid::State::Initial;
-	_states[2] = new FSMavoid::State::AVOID;
-	_states[3] = new FSMavoid::State::TURN_LEFT;
-	_states[4] = new FSMavoid::State::TURN_RIGTH;
-	_states[5] = new FSMavoid::State::DO_NOT_SUBSUME;
+	_states[0]  = new FSMavoid::State:: InitialPseudoState;
+	_states[1]  = new FSMavoid::State:: Initial;
+	_states[2]  = new FSMavoid::State:: AVOID;
+	_states[3]  = new FSMavoid::State:: TURN_LEFT;
+	_states[4]  = new FSMavoid::State:: TURN_RIGTH;
+	_states[5]  = new FSMavoid::State:: DO_NOT_SUBSUME;
 
 	setInitialState(_states[0]);            // set initial state
 }

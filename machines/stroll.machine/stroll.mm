@@ -1,7 +1,7 @@
 //
-// stroll.mm
+//stroll.mm
 //
-// Automatically created through MiCASE -- do not change manually!
+//Automatically created through MiEditCLFSM -- do not change manually!
 //
 #include "stroll_Includes.h"
 #include "stroll.h"
@@ -15,7 +15,6 @@
 
 using namespace FSM;
 using namespace CLM;
-
 extern "C"
 {
 	stroll *CLM_Create_stroll(int mid, const char *name)
@@ -26,12 +25,12 @@ extern "C"
 
 stroll::stroll(int mid, const char *name): CLMachine(mid, name)
 {
-	_states[0] = new FSMstroll::State::InitialPseudoState;
-	_states[1] = new FSMstroll::State::Initial;
-	_states[2] = new FSMstroll::State::STROLL;
-	_states[3] = new FSMstroll::State::STOP;
-	_states[4] = new FSMstroll::State::MOVE_BACK;
-	_states[5] = new FSMstroll::State::MOVE_FORWARD;
+	_states[0]  = new FSMstroll::State:: InitialPseudoState;
+	_states[1]  = new FSMstroll::State:: Initial;
+	_states[2]  = new FSMstroll::State:: STROLL;
+	_states[3]  = new FSMstroll::State:: STOP;
+	_states[4]  = new FSMstroll::State:: MOVE_BACK;
+	_states[5]  = new FSMstroll::State:: MOVE_FORWARD;
 
 	setInitialState(_states[0]);            // set initial state
 }

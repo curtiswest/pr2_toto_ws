@@ -1,0 +1,8 @@
+prefix=/home/curtis/catkin_ws/install
+
+Name: switchmotion
+Description: Description of switchmotion
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/curtis/catkin_ws/install/lib -llibswitchmotion
+Requires: 

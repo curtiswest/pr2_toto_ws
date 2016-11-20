@@ -1,0 +1,3 @@
+[submodule "src/pr2_laserscan_to_toto_sonar"]
+	path = src/pr2_laserscan_to_toto_sonar
+	url = https://github.com/curtiswest/pr2_laserscan_to_toto_sonar.git

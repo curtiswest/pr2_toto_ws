@@ -1,12 +1,12 @@
 //
-// State_FORWARD.mm
+//State_FORWARD.mm
 //
-// Automatically created through MiCASE -- do not change manually!
+//Automatically created through MiEditCLFSM -- do not change manually!
 //
 #include "switchmotion_Includes.h"
 #include "switchmotion.h"
-#include "State_FORWARD.h"
 
+#include "State_FORWARD.h"
 #include "State_FORWARD_Includes.h"
 
 using namespace FSM;
@@ -14,7 +14,7 @@ using namespace CLM;
 using namespace FSMswitchmotion;
 using namespace State;
 
-FORWARD::FORWARD(const char *name): CLState(name, *new FORWARD::OnEntry, *new FORWARD::OnExit, *new FORWARD::Internal)
+FORWARD::FORWARD(const char *name):CLState(name, *new FORWARD::OnEntry,*new FORWARD::OnExit, *new FORWARD::Internal)
 {
 	_transitions[0] = new Transition_0();
 }
@@ -25,7 +25,6 @@ FORWARD::~FORWARD()
 	delete &onExitAction();
 	delete &internalAction();
 
-	delete _transitions[0];
 }
 
 void FORWARD::OnEntry::perform(CLMachine *_machine, CLState *_state) const
@@ -56,6 +55,8 @@ bool FORWARD::Transition_0::check(CLMachine *_machine, CLState *_state) const
 
 	return
 	(
-#		include "State_FORWARD_Transition_0.expr"
+#			include "State_FORWARD_Transition_0.expr"
 	);
 }
+
+

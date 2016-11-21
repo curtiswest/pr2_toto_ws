@@ -36,11 +36,14 @@ These are the installation instruction for Ubuntu Trusty (14.04). If using a dif
 	`roscore`
 	`roslaunch pr2_toto pr2_world.launch`
 
-	After Gazebo initalises:
+	After Gazebo initalises, execute one of the following, 
 
-	`./devel/lib/pr2_laserscan_to_toto_sonar/pr2_laserscan_to_toto_sonar_node`
+		`./devel/lib/pr2_laserscan_to_toto_sonar/pr2_laserscan_to_toto_sonar_node` 
+
+		`./devel/lib/pr2_laserscan_to_toto_sonar/pr2_fullrangelaserscan_to_toto_sonar_node` 
 
 	After sensor converter intialises, open terminal in machines directory:
 
 	`cd ~/pr2_toto_ws/machines`
+
 	`../devel/lib/clfsm/clfsm -v ../devel/lib/switchmotion.machine stroll.machine/ avoid.machine/`

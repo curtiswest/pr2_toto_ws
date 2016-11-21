@@ -72,8 +72,8 @@
  <!-- This adds the laser macro, including the scan for gazebo and link name -->
   <include filename="$(find pr2_description)/urdf/sensors/hokuyo_lx30_laser.urdf.xacro" />
   <xacro:hokuyo_lx30_laser_v0 name="rear_laser" parent="torso_lift" ros_topic="rear_scan"
-                              update_rate="20" min_angle="-1.57" max_angle="1.57" >
-      <origin xyz="-0.30 0 -0.6" rpy="0 0 3.14" />
+                              update_rate="10" min_angle="-1.05" max_angle="1.05" >
+      <origin xyz="-0.30 0 -0.5" rpy="0 0 3.14" />
   </xacro:hokuyo_lx30_laser_v0>
 
   <!-- This adds a visual box to allow us to see the Hokuyo in rviz/gazebo -->

@@ -11,5 +11,6 @@
 
 using namespace guWhiteboard;
 // #define DEBUG
-#define SAFE_ZONE	75	// 60 cm is considered the safe zone
+#define SAFE_ZONE	70	// 60 cm is considered the safe zone
+
 

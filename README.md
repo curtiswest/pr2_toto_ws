@@ -8,7 +8,7 @@ This workspace is used to simulate the PR2 robot with a compatible sensor suite 
 These are the installation instruction for Ubuntu Trusty (14.04). If using a different operating system, Step 4 may have a different folder name but the steps are the same.
 
 1. Clone the repo to your computer to an easily accessible place (suggested: ~/)
-	`git clone https://github.com/curtiswest/pr2_toto_ws.git`
+	`git clone --recursive -j8 https://github.com/curtiswest/pr2_toto_ws.git`
 2. Make the workspace with
 	`cd pr2_toto_ws`
 	`catkin_make`
